@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountAPI.Infrasturcture"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountAPI.Application", "DiscountAPI.Application\DiscountAPI.Application.csproj", "{99BB335F-298C-4DC7-86A3-2CF328657486}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountAPI.Test", "DiscountAPI.Test\DiscountAPI.Test.csproj", "{C249F085-EDBB-4FBB-B4FF-CA50DC23CDA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{99BB335F-298C-4DC7-86A3-2CF328657486}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99BB335F-298C-4DC7-86A3-2CF328657486}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99BB335F-298C-4DC7-86A3-2CF328657486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C249F085-EDBB-4FBB-B4FF-CA50DC23CDA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C249F085-EDBB-4FBB-B4FF-CA50DC23CDA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C249F085-EDBB-4FBB-B4FF-CA50DC23CDA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C249F085-EDBB-4FBB-B4FF-CA50DC23CDA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
