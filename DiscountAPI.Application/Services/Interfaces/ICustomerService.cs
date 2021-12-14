@@ -6,5 +6,6 @@ namespace DiscountAPI.Application.Services.Interfaces
     public interface ICustomerService : IService<Customer>
     {
         Task<Customer> GetCustomerByName(string name);
+        Task<Customer> GetCustomerByEmail(string name);
     }
 }

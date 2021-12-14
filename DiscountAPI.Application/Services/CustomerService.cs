@@ -16,5 +16,9 @@ namespace DiscountAPI.Application.Services
         {
             return await _unitOfWork.Customers.GetCustomerByName(name);
         }
+        public async Task<Customer> GetCustomerByEmail(string email)
+        {
+            return await _unitOfWork.Customers.GetCustomerByName(email);
+        }
     }
 }

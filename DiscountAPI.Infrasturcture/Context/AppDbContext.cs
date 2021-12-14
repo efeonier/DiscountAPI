@@ -1,4 +1,5 @@
 using DiscountAPI.Core.Entities;
+using DiscountAPI.Core.UnitOfWorks;
 using DiscountAPI.Infrasturcture.Configuration;
 using DiscountAPI.Infrasturcture.Seeds;
 using Microsoft.EntityFrameworkCore;

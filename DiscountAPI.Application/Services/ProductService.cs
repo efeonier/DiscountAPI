@@ -5,7 +5,7 @@ using DiscountAPI.Core.UnitOfWorks;
 
 namespace DiscountAPI.Application.Services
 {
-    public class ProductService: Service<Product>, IProductService
+    public class ProductService : Service<Product>, IProductService
     {
         public ProductService(IUnitOfWork unitOfWork, IRepository<Product> repository) : base(unitOfWork, repository)
         {

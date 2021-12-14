@@ -10,14 +10,15 @@ namespace DiscountAPI.Application.Services
 {
     public class Service<T> : IService<T> where T : class
     {
-        public readonly IUnitOfWork _unitOfWork;
-        private readonly IRepository<T> _repository;
+        protected readonly IUnitOfWork _unitOfWork;
+        protected readonly IRepository<T> _repository;
 
         public Service(IUnitOfWork unitOfWork, IRepository<T> repository)
         {
             _unitOfWork = unitOfWork;
             _repository = repository;
         }
+
 
         public async Task<T> GetByIdAsync(int id)
         {
@@ -48,8 +49,13 @@ namespace DiscountAPI.Application.Services
 
         public void Remove(T entity)
         {
-            _repository.Remove(entity);
+            _repository.Update(entity);
             _unitOfWork.Commit();
+        }
+
+        public void Delete(T entity)
+        {
+            _repository.Remove(entity);
         }
 
         public T Update(T entity)

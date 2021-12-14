@@ -17,5 +17,10 @@ namespace DiscountAPI.Infrasturcture.Repositories
         {
             return await _appContext.Customers.FirstOrDefaultAsync(x => x.FirstName == name);
         }
+
+        public async Task<Customer> GetCustomerByEmail(string email)
+        {
+            return await _appContext.Customers.FirstOrDefaultAsync(x => x.Email == email);
+        }
     }
 }

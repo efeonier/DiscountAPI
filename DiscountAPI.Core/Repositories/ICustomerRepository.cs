@@ -6,5 +6,6 @@ namespace DiscountAPI.Core.Repositories
     public interface ICustomerRepository : IRepository<Customer>
     {
         Task<Customer> GetCustomerByName(string name);
+        Task<Customer> GetCustomerByEmail(string email);
     }
 }

@@ -19,6 +19,8 @@ namespace DiscountAPI.Application.Services.Interfaces
 
         void Remove(TEntity entity);
 
+        void Delete(TEntity entity);
+
         TEntity Update(TEntity entity);
     }
 }

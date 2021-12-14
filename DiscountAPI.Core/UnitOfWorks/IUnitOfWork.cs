@@ -3,6 +3,7 @@ using DiscountAPI.Core.Repositories;
 
 namespace DiscountAPI.Core.UnitOfWorks
 {
+  
     public interface IUnitOfWork
     {
         IProductRepository Products { get; }
@@ -11,6 +12,7 @@ namespace DiscountAPI.Core.UnitOfWorks
         ICustomerTypeRepository CustomerTypes { get; }
         IInvoiceRepository Invoices { get; }
         IInvoiceProductsRepository InvoiceProducts { get; }
+      
 
         Task CommitAsync();
         void Commit();

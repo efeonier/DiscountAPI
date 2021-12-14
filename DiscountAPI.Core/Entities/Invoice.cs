@@ -8,8 +8,10 @@ namespace DiscountAPI.Core.Entities
         public string InvoiceNumber { get; set; }
         public decimal TotalAmount { get; set; }
         public decimal DiscountedTotalAmount { get; set; }
-        
+
         public int CustomerId { get; set; }
         [ForeignKey("CustomerId")] public Customer Customer { get; set; }
+        
+        public virtual ICollection<Product> Products { get; set; }
     }
 }

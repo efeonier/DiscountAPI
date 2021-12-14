@@ -55,5 +55,19 @@ namespace DiscountAPI.Infrasturcture.Repositories
             _appContext.Entry(entity).State = EntityState.Modified;
             return entity;
         }
+
+        public void Delete(T entity)
+        {
+            if (entity.GetType().GetProperty("IsDeleted") == null)
+            {
+                entity.GetType().GetProperty("IsDelete")?.SetValue(entity, true);
+                Update(entity);
+            }
+            else
+            {
+                _dbSet.Attach(entity);
+                _dbSet.Remove(entity);
+            }
+        }
     }
 }

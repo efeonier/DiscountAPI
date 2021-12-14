@@ -20,5 +20,6 @@ namespace DiscountAPI.Core.Repositories
         void Remove(TEntity entity);
 
         TEntity Update(TEntity entity);
+        void Delete(TEntity entity);
     }
 }
