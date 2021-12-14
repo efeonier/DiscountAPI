@@ -19,11 +19,11 @@ namespace DiscountAPI.API.Controllers
     [ApiController]
     public class DiscountController : ControllerBase
     {
-        private readonly ILogger<DiscountController> _logger;
+        private readonly ILogger _logger;
         private readonly IDiscountService _discountService;
         private readonly IMapper _mapper;
 
-        public DiscountController(ILogger<DiscountController> logger, IDiscountService discountService, IMapper mapper)
+        public DiscountController(ILogger logger, IDiscountService discountService, IMapper mapper)
         {
             _logger = logger;
             _discountService = discountService;

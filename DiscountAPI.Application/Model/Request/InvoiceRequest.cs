@@ -7,11 +7,9 @@ namespace DiscountAPI.Application.Model.Request
     public class InvoiceRequest
     {
         public string InvoiceNumber { get; set; }
-        // public decimal TotalAmount { get; set; }
-        // public decimal DiscountedTotalAmount { get; set; }
 
         public int CustomerId { get; set; }
-        
+
         public List<Product> Products { get; set; }
     }
 }

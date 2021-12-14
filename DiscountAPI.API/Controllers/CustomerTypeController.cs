@@ -19,11 +19,11 @@ namespace DiscountAPI.API.Controllers
     [ApiController]
     public class CustomerTypeController : ControllerBase
     {
-        private readonly ILogger<CustomerTypeController> _logger;
+        private readonly ILogger _logger;
         private readonly ICustomerTypeService _customerTypeService;
         private readonly IMapper _mapper;
 
-        public CustomerTypeController(ILogger<CustomerTypeController> logger, ICustomerTypeService customerTypeService,
+        public CustomerTypeController(ILogger logger, ICustomerTypeService customerTypeService,
             IMapper mapper)
         {
             _logger = logger;
