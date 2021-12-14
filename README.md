@@ -40,7 +40,6 @@ customers
 <li>Entity Framework core</li>
 <li>SwaggerUI</li>
 <li>AutoMapper</li>
-<li>FluentValidation</li>
 </ul>
 
 #Code Coverage
